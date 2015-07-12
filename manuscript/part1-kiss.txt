@@ -1,1 +1,9 @@
 # Part 1 KISS
+
+There are many amazing techies out there. Unfortunately, I'm not one of them.
+
+I've worked with many Developers who are cleverer than me, who know language APIs almost inside out... and yet I can't say that I'm impressed with the quality of code that is usually produced. And it goes back to Martin Fowler's quote:
+
+*"Any fool can write code that a computer can understand. Good programmers write code that humans can understand."*
+
+I seem to be of a fairly rare breed of Developer who rates code readability over anything else, and usually this leads to more maintainable/extensible code.

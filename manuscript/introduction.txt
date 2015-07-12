@@ -23,7 +23,7 @@ Already you can tell, that this book is influenced by my Scala experiences. Howe
 
 One of the best IT quotes comes from Martin Fowler:
 
-"Any fool can write code that a computer can understand. Good programmers write code that humans can understand."
+*"Any fool can write code that a computer can understand. Good programmers write code that humans can understand."*
 
 I once came across a method written in Java that was about 55 lines long. At the time I had just learnt how to use [OP4J](http://www.op4j.org) a Java open source library that can help clean up your code, and with it rewrote the method to be 1 line. Now you might say that any helper/utility can do that if the 55 lines of code is something that is reusable. Well the code written using OP4J was not specific to the task of 55 lines long, it just helped to write the code more concisely and of course became more readable. More readable usually means more maintainable as well.
 
