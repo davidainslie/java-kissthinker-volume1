@@ -1,1 +1,14 @@
 # Preface
+
+A big chunk of the "Introduction" was originally in this Preface.
+That text is quite important, and then I realised, if it were in the Preface, many would miss that text, because let's be honest, most of us skip the Preface.
+
+Developers like to take shortcuts (and so skip the Preface) but on the other hand ~~I have 4 fingers and a thumb~~ Developers also like to over engineer and write complicated code.
+
+By the end of this book, I hope your code becomes more:
+
+readable -> 
+&nbsp;&nbsp;maintainable -> 
+&nbsp;&nbsp;&nbsp;&nbsp;extensible -> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;better for you -> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;better for fellow Developers and/or the new Developers joining your project.

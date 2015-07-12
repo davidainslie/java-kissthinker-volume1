@@ -1,1 +1,37 @@
 # Introduction
+
+Upon starting to write this book when Java 7 was the latest version, complaints about Java were increasing, mainly at the same rate as new JVM languages started to become popular. 
+
+Java has been a major breakthrough for IT projects, but like everything in life, nothing stands still, and the bigger something becomes, like Java, the harder it becomes to keep up with and be able to change direction with the newer technologies.
+Java is a phenomenon and as a result has almost grown too big. To learn all of Java including all the extensions such as third party open source is a daunting task.
+
+JVM languages such as Scala and Clojure, and other non JVM languages such Ruby and Swift have grown and as a result, Java is trying its best to react.
+
+However, it is the changing landscape of methodologies that has been highlighting Java's weaknesses and is why Java Developers must expand their knowledge beyond the language that Java is.
+
+Now even though learning another language, and/or another methodology is beneficial (I believe in projects using multiple technologies), a Developer still writes the code. If the application is not very extensible, maintainable, blame the Developer(s), not the technology.
+
+As for myself, I have moved into the Scala world. I’ve become a fan for two reasons. Firstly, Scala giving Developers what they want, what they’ve been missing, such as functional programming (a methodology we shall be covering). And secondly, because I believe these new technologies can actually save Java. Java’s other issue over the years has been lack of competition.
+Competition is healthy - JEE is a good example. Java SE (standard edition) is a Java Developer’s bread and butter. Write an application with collections, IO such as file handling, maybe throw in a GUI with Swing and then start up the JVM and watch/interact with that application. JEE (Java Enterprise Edition) takes your application to the next level, fit for big corporations where the likes of concurrency, security, transactions and distribution must be handled. Big applications need big help and when JEE originally came out, it was supposed to be the enterprise Developer’s assistant. Er no! It was a mess; it was very hard to use; it was over engineered. Then along came Spring (an open source library we shall discuss later) which took a KISS (Keep It Simple Stupid) point of view regarding enterprise development. It was and still is a hit. Companies dropped the use of JEE in favour of Spring. However, JEE has made a comeback. Has the competition saved JEE? When I began to write this book, JEE was at version 3.1 and looking good, and certainly nothing like its original.
+
+However, some might still say that is just too late for Java. But since Java is huge and everywhere, it can't just be thrown away. Scala chaps knew this and that is why Java libraries work seemlessly with Scala. The main problems we have with Java are integrating the slowly transistioning to the newer technologies. Java Developers have been so used to writing verbose and over engineered code, that they are using the likes of Scala incorrectly/badly. If Java is poorly used, then going forward is almost a show stopper.
+
+I believe that the future is Scala, but it's a bit like [Back to the Future Part II](https://en.wikipedia.org/wiki/Back_to_the_Future_Part_II).
+In movie, with Michael J. Fox, there was the good future and the bad future. If a Java Developer is using using Java badly, then that Developer's Scala future is "Back to the Bad Future", and we don't want that.
+
+Already you can tell, that this book is influenced by my Scala experiences. However, it is still a book on Java. What I hope you will gain from the coming chapters, is about writing good code and less about the Java language itself. 
+
+One of the best IT quotes comes from Martin Fowler:
+
+"Any fool can write code that a computer can understand. Good programmers write code that humans can understand."
+
+I once came across a method written in Java that was about 55 lines long. At the time I had just learnt how to use [OP4J](http://www.op4j.org) a Java open source library that can help clean up your code, and with it rewrote the method to be 1 line. Now you might say that any helper/utility can do that if the 55 lines of code is something that is reusable. Well the code written using OP4J was not specific to the task of 55 lines long, it just helped to write the code more concisely and of course became more readable. More readable usually means more maintainable as well.
+
+I’ve been given other Developer’s code where classes can be thousands of lines long. Methods can be hundreds of lines long. The code may be all crammed together using little white space, such as the Java standard for braces and even sticking to just 80 columns long for the code. 
+Developers are not really writing Object Oriented code. Developers refuse to use AOP or other methodologies such as Functional Programming, stating that it adds too much complexity.
+
+Don’t blame the tools; More focus should be on the Developers. How do they use the Java language? How do they get the best out of the language? How are they working as a team?
+
+It’s not what you know, but how you apply what know.
+
+#### The application of knowledge.
