@@ -32,6 +32,4 @@ Developers are not really writing Object Oriented code. Developers refuse to use
 
 Don’t blame the tools; More focus should be on the Developers. How do they use the Java language? How do they get the best out of the language? How are they working as a team?
 
-It’s not what you know, but how you apply what know.
-
-#### The application of knowledge.
+It’s not what you know, but how you apply what know. ***The application of knowledge.***
