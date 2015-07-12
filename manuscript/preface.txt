@@ -7,10 +7,10 @@ Developers like to take shortcuts (and so skip the Preface) but on the other han
 
 By the end of this book, I hope your code becomes more:
 
-~~~~~~
+~~~
 readable -> 
   maintainable -> 
     extensible -> 
       better for you -> 
-        better for fellow Developers and/or the new Developers joining your project.
-~~~~~~
+        better for fellow Developers
+~~~
