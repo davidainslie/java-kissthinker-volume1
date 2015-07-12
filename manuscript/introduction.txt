@@ -1,5 +1,15 @@
 # Introduction
 
+There are many amazing techies out there. Unfortunately, I'm not one of them.
+
+I've worked with many Developers who are cleverer than me, who know language APIs almost inside out... and yet I can't say that I'm impressed with the quality of code that is usually produced.
+
+One of the best IT quotes comes from Martin Fowler:
+
+*"Any fool can write code that a computer can understand. Good programmers write code that humans can understand."*
+
+I seem to be of a fairly rare breed of Developer who rates code readability over anything else, and usually this leads to more maintainable/extensible code.
+
 Upon starting to write this book when Java 7 was the latest version, complaints about Java were increasing, mainly at the same rate as new JVM languages started to become popular. 
 
 Java has been a major breakthrough for IT projects, but like everything in life, nothing stands still, and the bigger something becomes, like Java, the harder it becomes to keep up with and be able to change direction with the newer technologies.
@@ -20,10 +30,6 @@ I believe that the future is Scala, but it's a bit like [Back to the Future Part
 In movie, with Michael J. Fox, there was the good future and the bad future. If a Java Developer is using using Java badly, then that Developer's Scala future is "Back to the Bad Future", and we don't want that.
 
 Already you can tell, that this book is influenced by my Scala experiences. However, it is still a book on Java. What I hope you will gain from the coming chapters, is about writing good code and less about the Java language itself. 
-
-One of the best IT quotes comes from Martin Fowler:
-
-*"Any fool can write code that a computer can understand. Good programmers write code that humans can understand."*
 
 I once came across a method written in Java that was about 55 lines long. At the time I had just learnt how to use [OP4J](http://www.op4j.org) a Java open source library that can help clean up your code, and with it rewrote the method to be 1 line. Now you might say that any helper/utility can do that if the 55 lines of code is something that is reusable. Well the code written using OP4J was not specific to the task of 55 lines long, it just helped to write the code more concisely and of course became more readable. More readable usually means more maintainable as well.
 
