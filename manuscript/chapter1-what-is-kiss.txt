@@ -20,7 +20,8 @@ Just as a quickie, which of the following two pieces of code is easier to read?
 A traditional approach:
 
 ```java
-accountNameTextField.addPropertyChangeListener(    new PropertyChangeListener() {        public void propertyChange(PropertyChangeEvent propertyChangeEvent) {		     if ("enabled".equals(propertyChangeEvent.getPropertyName())) {                applyModificationsButton.setEnabled(
+accountNameTextField.addPropertyChangeListener(    new PropertyChangeListener() {        public void propertyChange(PropertyChangeEvent propertyChangeEvent) {
+            if ("enabled".equals(propertyChangeEvent.getPropertyName())) {                applyModificationsButton.setEnabled(
                     (Boolean)propertyChangeEvent.getNewValue();
                     .....
 ```
