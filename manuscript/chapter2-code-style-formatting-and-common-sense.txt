@@ -1,5 +1,54 @@
 # Chapter 2
 
-It was a **bold** and *italic* night!
+### 2.1 Introduction
 
-Suddenly, a shot rang out!
+Wow! What a title to this chapter.
+Some might see this as the boring stuff, so it's best to get it out of the way first - though it doesn't have any less importance to what follows.
+What I want to achieve here, is set a KISS foundation to work upon. KISS code leads to better code. Let’s imagine that KISS is a separate entity. In fact, let’s imagine that it is a methodology like OO, and we want them to work together. That is actually the core of this book – working with different methodologies, but the key is having them merge into each other. So we want to merge KISS with methodologies such as OO i.e. they have to be connected. Here is a simple example:If like me, you worked on large projects, you would have seen some pretty big classes. Take a ridiculous class that is 5000 lines long. These days, being agile, we would refactor this class; split it up into manageable components. Now let’s write a KISS class. We set a rule that the class should not be longer than 1000 (or whatever number we are comfortable with) lines long including comments and whitespace, but excluding the initial class Javadoc. If the original (ridiculous) class, after refactoring, is 1000 lines or less, it is also a KISS class. Now let’s backtrack. KISS is not really a methodology. There are no rules. But by setting common sense goals and informal rules such as formatting, idioms etc. becomes almost the same as later doing (agile) refactoring to bring ridiculous classes back into line. (Note that books on OO sometimes mention stuff like this: a method should not be more than 50 lines long; a method should not take more than three arguments).This is the easiest place to start regarding KISS.We Developers write code, and we read code. We read other Developer’s code to understand it, to extend it, to change it, or maybe out of curiosity when using/calling it.The way we write code is most important to KISS. We must write the code, not for ourselves, but for our team, our project. We expect others to use our code and read it. Another Developer must be able to easily understand our code. So do we write the equivalent of a children’s book, or do we write the equivalent of “The Silmarillion”, a very good Tolkien book, but at times, difficult to read?
+
+However, there is a far bigger, more relevant issue. Each Developer has his/her own opinions, ideas, preferences and ultimately works most efficiently when writing code their way. Some Developers feel more comfortable using Java style braces e.g.
+
+```javaif (myStyle == theCurrentStyle) {    LOGGER.info("I'm happy and work more efficiently this way");} else {    LOGGER.warn("I'm a tad uncomfortable");}
+```Others prefer this:
+
+```javaif (myStyle == theCurrentStyle) {    LOGGER.info("I'm happy and work more efficiently this way");} else {    LOGGER.warn("I'm a tad uncomfortable");}
+```The most obvious difference is that the first approach is more compact. That way you can then see more code on the screen. Just to let you know, I prefer the second approach. We’ll go into advantages/disadvantages shortly. But also to let you know, I use the first style when writing Scala code. Why?
+
+Scala is very concise and plays well with the first concise style. The Scala compiler is also quite fussy, and straying away from convention can sometimes make it complain.
+
+Java on the other hand is very verbose, as so I prefer the second verbose way. Playing to ones strengths, or simply playing to how things are, can help your code maintain high levels of readability.
+
+### 2.2 Style
+
+TODO
+
+### 2.3 BracesLet’s not get too involved in the braces rule. It is wise for a team to select one way and stick with it. Regarding Java, I prefer my braces aligned vertically, but if a team uses the Java conventional way that is fine. I can go both ways. I have, in the past, been a Java Swinger (Java Swing that is).However, I can only imagine that the idea behind the misalignment of braces approach is to reduce whitespace and thereby see more on the screen. A nice idea, but not when a verbose language is not used very well.I’m always amazed how long classes get, even with the misaligned braces. When I code in my style, I use a lot of whitespace and even have double blank lines between methods. However, my classes are still usually shorter than other Developers I've worked with.
+So there are classes of 10,000 lines long with the code as cramped as possible and then you wonder why it’s difficult to read; maintain; extend. 
+You want to see more code on the screen (without cheating)? There is another way.
+
+Simplest way is to get a bigger monitor. Ah! The advancement of technology. It seems never ending. We can develop on much larger screens or have multiple monitors, and screens of increasing resolution. You can even do what I’ve seen some Developers do and that is turn your monitor 90 degrees (you can see a lot more lines of code that way). Also, you could write better structured code, where all methods are small enough to be completely viewed without scrolling.And what about how your eyes communicate with your brain? We’ve all seen optical illusions. It’s amazing how easily the brain can be tricked. The Java convention of misaligned braces are preferred when methods and the likes of "if" blocks are small, but when you have many lines of code between an opening and closing brace, vertical alignment is easier for your eyes to work with your brain.
+So when developing Java, why compromise? The eyes and brain like pictures; they like simplicity; they like straight lines; they like things to be aligned. So why not align your braces?
+
+### 2.4 The 80 column rule
+The following code abides by the Java convention for braces and the 80 column rule:
+
+```javaPropertyChangeListener visiblePropertyChangeListener    = new PropertyChangeListener() {        /**          * @param propertyChangeEvent         */        public void propertyChange(PropertyChangeEvent propertyChangeEvent) {            for (Component component : components) {                component                    .setVisible((Boolean)propertyChangeEvent.getNewValue());            }        }                };                for (Component component : components) {                component.addPropertyChangeListener("visible",
+                                        visiblePropertyChangeListener);}
+```        Now let’s forget about those rules to have the following:
+
+```javaPropertyChangeListener visiblePropertyChangeListener = new PropertyChangeListener()
+{    /**      * @param propertyChangeEvent     */    public void propertyChange(PropertyChangeEvent propertyChangeEvent)
+    {        for (Component component : components)
+        {            component.setVisible((Boolean)propertyChangeEvent.getNewValue());        }    }            };                for (Component component : components)
+{                component.addPropertyChangeListener("visible", visiblePropertyChangeListener);}
+```
+
+Which is easier to read?
+If you prefer Java conventional braces, then copy and paste and change to that style and then compare.
+I once worked on a project where no matter what, we had to stick to the 80 column rule. I asked my fellow Developers, would they rather use up all their screen instead of half? Yes I know! Crazy that the right half of our monitors was empty! They all wanted to utilise their monitors but the technical lead had laid down the law. So I asked the technical lead, why we must stick to the 80 column rule (I did not mention that the team had agreed with me that it is more of a hinderance than anything else). His reply? "I need no more than 80 columns so that when I print out the code it is not reformatted". I left it at that.Please note how he stated "I" and remembered that silly old saying, "there is no 'I' in team". Basically he wanted code set out so that he could work to his preferences and who cares about the team. This may all seem trivial, but it's amazing how many other little things bubble away which eventually frustrates Developers – again, preventing them from working at their optimum levels.I didn't mention to the technical lead how the team felt. I didn't say, "why can't you print the code in landscape?". I didn't mention that the majority of a Developer's coding time is done on the screen (not on paper), and not to mention the fact that we all had 2 large monitors and yet our code had multiple wrappings onto others lines. It's amazing how many times you have to do away with String.format because it breaks the 80 column rule, and so you go back to string concatenation. And speaking from experience, it's amazing how frustrated you get when your code is on the 81st column and you have to e.g. alter the indentation for that line, or wrap somewhere on the current line – after a while you realise this rule is counterproductive.
+
+Just to really get this insanity across, the Maven build for that project had the 80 column rule configured so that you would break the build if a line of code had reached the 81st column.
+
+A> From the book "Well Grounded Java Developer":
+A>
+A> By taking the Scala path of trying not to make the developer repeat information, more code will fit on an IDE screen at any one time. This means that when faced with a complex bit of logic, the developer can see more of it, and hopefully get additional clues toward understanding it.
