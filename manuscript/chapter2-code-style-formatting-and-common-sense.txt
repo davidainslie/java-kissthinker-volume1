@@ -22,7 +22,7 @@ Java on the other hand is very verbose, as so I prefer the second verbose way. P
 
 TODO
 
-### 2.3 BracesLet’s not get too involved in the braces rule. It is wise for a team to select one way and stick with it. Regarding Java, I prefer my braces aligned vertically, but if a team uses the Java conventional way that is fine. I can go both ways. I have, in the past, been a Java Swinger (Java Swing that is).However, I can only imagine that the idea behind the misalignment of braces approach is to reduce whitespace and thereby see more on the screen. A nice idea, but not when a verbose language is not used very well.I’m always amazed how long classes get, even with the misaligned braces. When I code in my style, I use a lot of whitespace and even have double blank lines between methods. However, my classes are still usually shorter than other Developers I've worked with.
+### 2.3 BracesLet’s not get too involved in the braces rule. It is wise for a team to select one way and stick with it. Regarding Java, I prefer my braces aligned vertically, but if a team uses the Java conventional way that is fine. I can go both ways. I have, in the past, been a Java Swinger (Java Swing that is).However, I can only imagine that the idea behind the misalignment of braces approach is to reduce whitespace and thereby see more on the screen. A nice idea, but not when a verbose language is not used very well.I’m always amazed how long classes get, even with the misaligned braces. When I code in my style, I use a lot of whitespace. However, my classes are still usually shorter than other Developers I've worked with.
 So there are classes of 10,000 lines long with the code as cramped as possible and then you wonder why it’s difficult to read; maintain; extend. 
 You want to see more code on the screen (without cheating)? There is another way.
 
@@ -52,4 +52,6 @@ Just to really get this insanity across, the Maven build for that project had th
 
 A> From the book "Well Grounded Java Developer":
 A>
-A> By taking the Scala path of trying not to make the developer repeat information, more code will fit on an IDE screen at any one time. This means that when faced with a complex bit of logic, the developer can see more of it, and hopefully get additional clues toward understanding it.
+A> By taking the Scala path of trying not to make the developer repeat information, more code will fit on an IDE screen at any one time. This means that when faced with a complex bit of logic, the developer can see more of it, and hopefully get additional clues toward understanding it.
+
+### 2.5 WhitespaceI love whitespace. Why do books have whitespace? There are often blank pages between chapters, lots of paragraphs and so on. It’s all about readability.Let’s start by showing some code from a Developer I once worked with. Not the exact same code, but an example of how he liked to write code. In fact, the code is just some of my own code which I’ve reformatted. Here I’m really interested in the lack of whitespace.
