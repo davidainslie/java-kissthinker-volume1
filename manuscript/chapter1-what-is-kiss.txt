@@ -8,6 +8,7 @@ git clone https://github.com/davidainslie/java-kissthinker.git
 ```
 A>
 A> You'll need Java 8+ installed:
+
 ```bash
 brew tap caskroom/cask
 brew install brew-cask
@@ -15,11 +16,13 @@ brew cask install java
 ```
 A>
 A> And you will need Maven installed:
+
 ```bash
 brew install maven
 ```
 A>
 A> And now you can run all the tests to make sure everything is ok:
+
 ```bash
 mvn test
 ```STEPSNow at this stage, some of the steps might not mean that much to you. Everything will be explained in the relevant chapters that follow, at this point we just want to get the code building and running.Regarding some of these steps, especially to do with AspectJ and Eclipse, you may think that the build is tied into your IDE. Rest assured, the code only depends on the chosen build tool, in our case Maven. We could have used Ant, but that is old school, or we could have used Gradle, the new kid on the block. Gradle may probably be the future, but as many developers don’t know about it, the safest option was Maven. Safe? Ant users may disagree, but I had to choose some build tool, and hopefully you will see that Maven does the job. And what about Ivy? Ivy seems to be a half way house between Ant and Maven, and I’m afraid my one Ivy experience wasn’t that great.For Eclipse installAJDT 2.2.0: update site http://download.eclipse.org/tools/ajdt/42/updateAJDT for m2e: update site http://dist.springsource.org/release/AJDT/configurator/ ← don’t need and can’t get anywayUpon installing AJDT configure project “core-kissthinker” as an AspectJ project. It is this project that holds KISS Thinker aspect code.So, right click on this project, and in the popup select “Convert to AspectJ Project”.
